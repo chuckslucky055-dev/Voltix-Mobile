@@ -1,14 +1,19 @@
 # Voltix Mobile
 
-A responsive Nigerian smartphone retailer storefront concept featuring product browsing, search, brand filters, deals, cart interactions, contact enquiries and Naira pricing.
+Responsive smartphone retailer storefront demo built with React, TypeScript and Vite.
 
-**Live demo:** https://voltix-mobile-e374ee.v2.appdeploy.ai/
+## Features
+- Product catalogue with Naira pricing
+- Search and brand filters
+- Deals, product details and cart interactions
+- Responsive layouts
 
 ## Run locally
-
 ```bash
 npm install
 npm run dev
 ```
 
-This is a demonstration storefront. Checkout and contact interactions are illustrative; no real payments are processed.
+Live demo: https://voltix-mobile-e374ee.v2.appdeploy.ai/
+
+This is a demo storefront. Checkout does not process real payments.

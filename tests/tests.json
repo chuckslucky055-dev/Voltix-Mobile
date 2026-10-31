@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Browse products and add a phone to cart",
+    "sanity": true,
+    "viewport": "desktop",
+    "covers": [
+      "product catalog",
+      "product pricing",
+      "add to cart",
+      "cart count"
+    ],
+    "description": "Verifies the core shopping flow from the catalog into the cart.",
+    "steps": [
+      "Open the Shop page",
+      "Click Add to cart on iPhone 17 Pro Max",
+      "Open the cart"
+    ],
+    "expected": "The iPhone appears in the cart with its displayed Naira price and the cart count increases to 1."
+  },
+  {
+    "name": "Search phones on mobile",
+    "viewport": "mobile",
+    "covers": ["mobile responsive layout", "product search"],
+    "description": "Verifies the phone catalog can be searched and remains usable on a mobile viewport.",
+    "steps": [
+      "Open the Shop page on mobile",
+      "Enter Galaxy in the search field",
+      "View the filtered products"
+    ],
+    "expected": "Galaxy products are shown and unrelated products are filtered out."
+  },
+  {
+    "name": "Remove a phone from the cart",
+    "viewport": "desktop",
+    "covers": ["cart removal", "cart total update"],
+    "description": "Verifies a product can be removed and the cart summary updates.",
+    "setup": ["Add iPhone 17 Pro Max to the cart"],
+    "steps": [
+      "Open the cart",
+      "Click the remove X beside the iPhone",
+      "Review the cart"
+    ],
+    "expected": "The phone is removed and the empty-cart state is displayed."
+  },
+  {
+    "name": "Submit the contact enquiry form",
+    "viewport": "desktop",
+    "covers": ["contact form", "customer enquiry workflow"],
+    "description": "Verifies the contact form accepts customer requirements without navigating away.",
+    "steps": [
+      "Open Contact",
+      "Enter a name and contact detail",
+      "Choose iPhone and enter a budget requirement",
+      "Submit the form"
+    ],
+    "expected": "The form remains on the contact page without a browser validation error."
+  }
+]
